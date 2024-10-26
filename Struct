@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+struct person {
+    int phone;
+    float marks;
+    char reg_no[20];
+    char email[25];
+    int id;
+    char name[25];
+} student1,student2;
+int main(){
+
+    strcpy(student1.name,"issah");
+    strcpy(student1.email,"isaacmutinda931@gmail.com");
+    student1.phone = 254701476205;
+    strcpy(student1.reg_no,"CT102/G/24046/24");
+    student1.marks = 56.0;
+    
+    printf("name: %s \n",student1.name);
+    printf("email: %s \n",student1.email);
+    printf("phone no: %d \n",student1.phone);
+    printf("registration number: %s \n",student1.reg_no);
+    printf("marks: %f \n",student1.marks);
+   
+   return 0;
+}
