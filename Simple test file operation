@@ -3,7 +3,6 @@
 
 #define MAX_LENGTH 100
 
-// Function to write a sentence to "data.txt"
 void writeSentence() {
     FILE *file = fopen("data.txt", "w");
     if (file == NULL) {
@@ -17,7 +16,6 @@ void writeSentence() {
     fclose(file);
 }
 
-// Function to read and display content from "data.txt"
 void readContent() {
     FILE *file = fopen("data.txt", "r");
     if (file == NULL) {
@@ -32,7 +30,6 @@ void readContent() {
     fclose(file);
 }
 
-// Function to append a sentence to "data.txt"
 void appendSentence() {
     FILE *file = fopen("data.txt", "a");
     if (file == NULL) {
